@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Luis Moreira up201102786@fc.up.pt -->
+
+<!-- ENTITIES -->
+<!ENTITY % hierarquia "(temporadas* | partes* | episódios* | cenas*)">
+<!ENTITY % preâmbulo "título, sinopse?, personagens?">
+<!ENTITY % texto "(#PCDATA | fala | adereço | refere | comentário)*">
+
+<!-- ELEMENTS -->
+<!ELEMENT guião (cabeçalho, %hierarquia;)>
+
+<!ELEMENT cabeçalho (título, autor+, data, sinopse?, personagens)>
+<!ELEMENT título (#PCDATA)>
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT data (#PCDATA)>
+<!ELEMENT sinopse (#PCDATA)>
+<!ELEMENT personagens (personagem+)>
+<!ELEMENT personagem (nome, descrição)>
+<!ELEMENT nome (#PCDATA)>
+<!ELEMENT descrição (#PCDATA)>
+
+<!ELEMENT temporadas (%preâmbulo;, episódios+)>
+<!ELEMENT episódios (%preâmbulo;, cenas+)>
+<!ELEMENT partes (%preâmbulo;, cenas+)>
+<!ELEMENT cenas %texto;>
+<!ELEMENT fala (#PCDATA)>
+<!ELEMENT adereço (#PCDATA)>
+<!ELEMENT refere EMPTY>
+<!ELEMENT comentário (#PCDATA)>
+
+<!-- ATTRIBUTES -->	
+<!ATTLIST personagem 
+	identificador ID #REQUIRED>
+<!ATTLIST cenas
+	contexto CDATA #REQUIRED>
+<!ATTLIST temporadas
+	identificador ID #REQUIRED>
+<!ATTLIST episódios
+	identificador ID #REQUIRED>
+<!ATTLIST partes
+	identificador ID #REQUIRED>
+<!ATTLIST fala
+	personagem IDREF #REQUIRED>
+<!ATTLIST refere
+	personagem IDREF #REQUIRED>

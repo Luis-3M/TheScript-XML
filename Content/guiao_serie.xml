@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="style.xsl"?>
+
+<guião xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="guiao.xsd">
+	<cabeçalho>
+		<título>Mr. Robot</título>
+		<autor>Sam Esmail</autor>
+		<data>2015-06-24</data>
+		<sinopse>Mr. Robot follows Elliot, a young programmer who works as a
+			cyber-security engineer by day and a vigilante hacker by night. Elliot finds
+			himself at a crossroad when the mysterious leader of an underground hacker group
+			recruits him to destroy the corporation he is paid to protect.</sinopse>
+		<personagens>
+			<personagem identificador="personagem1">
+				<nome>Elliot Alderson</nome>
+				<descrição>Rami Malek was born on May 12, 1981 in Los Angeles, California, USA
+					as Rami Said Malek. He is an actor, known for Short Term 12 (2013), Need for Speed
+					(2014) and Mr. Robot (2015).</descrição>
+			</personagem>
+			<personagem identificador="personagem2">
+				<nome>Mr. Robot</nome>
+				<descrição>Christian Michael Leonard Slater was born on August 18, 1969 in New
+					York City, to Michael Hawkins, a well-known soap actor, and Mary Jo Slater (née
+					Lawton), a casting agent. Christian started in show business early,
+					appearing on the soap opera The Edge of Night (1956) in 1976 at the age of 7.</descrição>
+			</personagem>
+		</personagens>
+	</cabeçalho>
+	<temporadas identificador="temporada1">
+		<título>Season 1</título>
+		<episódios identificador="episódio1.1">
+			<título>Hello Friend</título>
+			<sinopse>Elliot, a cyber-security engineer by day and vigilante hacker by
+				night, is recruited by a mysterious underground group to destroy the firm he's
+				paid to protect. Elliot must decide how far he'll go to expose the forces he
+				believes are running (and ruining) the world.</sinopse>
+			<cenas contexto="Junto ao parque de diversões; Dia">
+				<fala personagem="personagem2">Eliot, consegui o último saquinho de Twinkies
+					do mercado. Queres um?
+				</fala>
+				<fala personagem="personagem1">Ela acabou de me chamar espantalho.</fala>
+			</cenas>
+			<cenas contexto="Na roda gigante; Dia">
+				<fala personagem="personagem1">Foi por isso que me escolheste a mim, porque
+					eu trabalho na AllSafe.
+				</fala>
+				<fala personagem="personagem2">Amanhã a AllSafe vai receber uma visita do
+					FBI
+					e do Comando Cibernético Americano.
+				</fala>
+			</cenas>
+		</episódios>
+		<episódios identificador="episódio1.2">
+			<título>Ones and Zeros</título>
+			<sinopse>Elliot is torn between accepting a job offer from Evil Corp and joining
+				the fsociety hacker group. At the same time Elliot needs to make decision that
+				could harm people around him.</sinopse>
+			<cenas contexto="Em casa de Elliot; Noite">
+				<fala personagem="personagem1">Estou a violar a minha regra mas é uma semana
+					estranha.
+				</fala>
+			</cenas>
+		</episódios>
+	</temporadas>
+	<temporadas identificador="temporada2">
+		<título>Season 2</título>
+		<personagens>
+			<personagem identificador="personagem3">
+				<nome>Elliot's Mother</nome>
+				<descrição>Vaishnavi Sharma is an actress, known for Anjali (2008), Mr. Robot
+					(2015) and Rasikan Re (2003).</descrição>
+			</personagem>
+		</personagens>
+		<episódios identificador="episódio2.1">
+			<título>Unm4sk-pt1</título>
+			<sinopse>A brief flashback shows that Tyrell recorded an fsociety video the
+				night he visited Elliot. One month later, Elliot has gone off the grid, living
+				with his mother and maintaining a repetitive routine in an attempt to weaken the
+				influence of Mr. Robot, who continually appears to him and torments him while
+				still refusing to tell him what happened to Tyrell. fsociety continues under
+				Darlene's leadership, hacking the smart home of E Corp general counsel Susan
+				Jacobs and using it as home base after forcing Jacobs to move out. With Mobley's
+				assistance, Darlene executes a hack on the Bank of E Corp, holding their records
+				for ransom.</sinopse>
+			<cenas contexto="Em casa da mãe de Elliot; Crepúsculo">
+				<refere personagem="personagem1" />
+				Tenho mantido um diário. É a única forma de manter o meu programa a
+				correr, como é suposto.
+				<comentário>O dia anoitece</comentário>
+				<fala personagem="personagem3">Vejo-te de manhã.</fala>
+				E depois vou para a cama. A minha mãe não tem computador ou acesso à
+				Internet para tentar-me durante a noite.
+			</cenas>
+		</episódios>
+		<episódios identificador="episódio2.2">
+			<título>Unm4sk-pt2</título>
+			<sinopse>Fsociety blackmails Scott Knowles into publicly burning $5.9
+				million cash for the ransom (of the hack of the previous episode) while wearing
+				an fsociety mask. Angela continues up the ladder at E Corp, seemingly content in
+				her new corporate position, and appears to abandon the lawsuit. Joanna
+				receives a gift on her doorstep, a music box with a phone hidden underneath, but
+				misses the call. Elliot discovers he has been acting under Mr. Robot's
+				influence while he thought he was sleeping. A man named Brock murders Gideon,
+				who had earlier threatened to report Elliot's suspicious behavior at Allsafe
+				to the FBI and agent Dominique DiPierro. Elliot wakes up from a dissociative
+				state on the phone, greeted on the other end by Tyrell. </sinopse>
+			<cenas contexto="Junto ao telefone; Noite">
+				<fala personagem="personagem1">
+					Quero saber o que aconteceu, diz-me o que
+					aconteceu!
+				</fala>
+				<fala personagem="personagem2">Como ele disse, não é seguro, não por telefone
+				</fala>
+				<fala personagem="personagem1">Não deixarei que me faças outra vez
+					prisioneiro da minha própria paranóia.
+				</fala>
+				<fala personagem="personagem2">Se não és paranóico precisas de mim mais do
+					que calculas. Nós tínhamos um acordo. Querias falar com ele? Eu
+					tratei disso. Não tenho culpa que seja maluquinho da cabeça.
+				</fala>
+				Ele espera que eu acredite nisto? Acabámos mesmo de falar com homem
+				mais procurado do planeta?
+			</cenas>
+		</episódios>
+	</temporadas>
+</guião>

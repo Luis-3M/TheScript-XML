@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="style.xsl"?>
+
+<guião xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="guiao.xsd">
+	<cabeçalho>
+		<título>Auto da Barca do Inferno</título>
+		<autor>Gil Vicente</autor>
+		<data>1531-05-13</data>
+		<sinopse>Auto da Barca do Inferno, Obra de Gil Vicente que consegue se mostrar
+			contemporânea. Não é á toa que o livro “Auto da Barca do Inferno” de Gil Vicente, um
+			clássico da literatura, seja obrigatório, ele retrata a sociedade portuguesa
+			do século XVI e ao mesmo tempo possui temas atuais, com uma boa sátira à sociedade.
+			O Auto é uma peça teatral, divida em cenas e atos, escrita em 1517. O cenário desta
+			obra é um porto onde se encontram duas barcas, uma leva ao inferno e a outra ao
+			paraíso, uma guiada por um Diabo e a outra por um Anjo, e sendo da decisão deles quem
+			entra ou não em suas barcas.</sinopse>
+		<personagens>
+			<personagem identificador="personagem1">
+				<nome>Diabo</nome>
+				<descrição>Condutor das almas ao Inferno, conhece muito bem cada um dos
+					personagens que lhe cai às mãos. Diabo é a figura que recebe todos com simpatia,
+					que abre um espaço para as almas se defenderem e ironiza as suas falas.</descrição>
+			</personagem>
+			<personagem identificador="personagem2">
+				<nome>Fidalgo</nome>
+				<descrição>Representa a nobreza, e chega com um pajem, tem um vestuário
+					exagerado e uma cadeira de espaldar, elementos característicos do seu estado
+					social, e acaba indo para o Inferno.</descrição>
+			</personagem>
+			<personagem identificador="personagem3">
+				<nome>Anjo</nome>
+				<descrição>É uma figura fria, calada, autoritária, que se manifesta apenas
+					para julgar conduzindo as almas para o Céu.</descrição>
+			</personagem>
+			<personagem identificador="personagem4">
+				<nome>Onzeneiro</nome>
+				<descrição>Figura que ao chegar à barca do Diabo descobre que seu rico dinheiro
+					ficara em terra.</descrição>
+			</personagem>
+		</personagens>
+	</cabeçalho>
+	<partes identificador="parte1">
+		<título>Parte I</título>
+		<personagens>
+			<personagem identificador="personagem0">
+				<nome>Companheiro do Diabo</nome>
+				<descrição>Assiste o Diabo na barca.</descrição>
+			</personagem>
+		</personagens>
+		<cenas contexto="Junto à barca do Diabo; Dia">
+			<fala personagem="personagem1">À barca, à barca, venham lá! Que temos
+				gentil maré!
+			</fala>
+			<comentário>Dirigindo-se ao companheiro</comentário>
+			<fala personagem="personagem1">Ora põe o barco à ré!</fala>
+			<fala personagem="personagem0">Está feito, está feito!</fala>
+			<fala personagem="personagem1">Bem feito está! Vai agora, em má hora,
+				esticar aquele palanco e desocupar aquele banco, para a gente que
+				virá.
+			</fala>
+			<comentário>Falando para o ar</comentário>
+			<fala personagem="personagem1">À barca, à barca, hu-u! Depressinha, que se
+				quer ir! Oh, que tempo para partir, Louvores a Belzebu!
+			</fala>
+			<comentário>Dirigindo-se ao companheiro</comentário>
+			<fala personagem="personagem1">Mas então! que fazes tu? Limpa todo aquele
+				leito!
+			</fala>
+			<fala personagem="personagem0">Em boa hora! Feito, feito!</fala>
+			<fala personagem="personagem1">Abaixa-me esse cu! Liberta aquela poja e
+				afrouxa aquela driça.
+			</fala>
+			<fala personagem="personagem0">Oh-oh, caça! Oh-oh, iça, iça!</fala>
+			Aproxima-se o Fidalgo e, chegando ao barco infernal, diz:
+			<fala personagem="personagem2">Esta barca para onde vai, que assim está
+				apercebida?
+			</fala>
+			<fala personagem="personagem1">Vai para a ilha perdida, e há de partir daqui
+				a nada.
+			</fala>
+			<fala personagem="personagem2">E para lá vai a senhora?</fala>
+			<fala personagem="personagem1">Sou um senhor, ao vosso serviço.</fala>
+			<fala personagem="personagem2">Parace-me isto um cortiço...</fala>
+			<fala personagem="personagem1">Porque a vedes daí de fora.</fala>
+			<fala personagem="personagem2">Pois sim, e porque terra passais?</fala>
+			<fala personagem="personagem1">Para o inferno, senhor.</fala>
+			<fala personagem="personagem2">Para a outra barca me vou!</fala>
+		</cenas>
+		<cenas contexto="Junto à barca do Anjo; Dia">
+			<comentário>Já ao pé da outra barca.</comentário>
+			<fala personagem="personagem2">Oh da barca! Para onde ís? Oh, barqueiros!
+				Não me ouvis? Respondei-me! Olá! Ó!...
+			</fala>
+			<comentário>O Anjo ignora-o</comentário>
+			<fala personagem="personagem2">Por deus, aviado estou! Quanto a isto é já
+				pior... Que jericocins, salvanor! Pensam que eu sou um grou?
+			</fala>
+			<fala personagem="personagem3">Que quereis?</fala>
+			<fala personagem="personagem2">Que me digais, pois morri tão sem aviso, se a
+				barca do Paraíso é esta em que navegais.
+			</fala>
+			<fala personagem="personagem3">É esta que desejais?</fala>
+			<fala personagem="personagem2">Que me deixeis embarcar. Sou fidalgo de solar,
+				é bom que me recolhais.
+			</fala>
+			<fala personagem="personagem3">Não se embarca tirania, neste batel divinal.
+			</fala>
+			<fala personagem="personagem2">Não sei porque negais entrada à minha
+				senhoria...
+			</fala>
+			<fala personagem="personagem3">Para a vossa fantasia muito pequena é esta
+				barca.
+			</fala>
+			<fala personagem="personagem2">Para senhor de bom nome, não há aqui mais
+				cortesia? Venha a prancha e atavio! Levai-me desta ribeira!
+			</fala>
+			<fala personagem="personagem3">Não vindes cá a pensar de entrar neste navio.
+				Aquele ali vai mais vazio. Ali a cadeira entrará, o rabo caberá e
+				todo vosso senhorio. Ireis ali mais espaçoso, vossa fumosa
+				senhoria, a pensar na vossa tirania
+				Contra o pobre povo queixoso. E
+				porque, de generoso, desprezaste os pequenos, achar-vos-ei tanto
+				menos Quanto mais foste fumoso.
+			</fala>
+		</cenas>
+	</partes>
+	<partes identificador="parte2">
+		<título>Parte II</título>
+		<cenas contexto="Junto à barca do Diabo; Tarde">
+			Aparece um Onzeneiro, e pergunta ao barqueiro do Inferno, dizendo:
+			<fala personagem="personagem4">Para onde navegais?</fala>
+			<fala personagem="personagem1">Oh! Em que má hora chegais, Onzeneiro, meu
+				parente! Porque tardastes vós tanto?
+			</fala>
+			<fala personagem="personagem4">Mais ainda eu quisera tardar...
+				Na safra do
+				apanhar, deu-me Saturno o quebranto.
+			</fala>
+			<fala personagem="personagem1">Ora muito me espanto por ver não vos salvar o
+				dinheiro!...
+			</fala>
+			<fala personagem="personagem4">Nem para o barqueiro me deixaram ficar com
+				algo...
+			</fala>
+			<fala personagem="personagem1">Ora então entrai, entrai aqui!</fala>
+			<fala personagem="personagem4">Não hei eu de aí embarcar!</fala>
+			<fala personagem="personagem1">Oh! Que gentil recear, e que divertido para
+				mim!
+			</fala>
+			<fala personagem="personagem4">Ainda agora faleci! Deixa-me escolher um batel!
+			</fala>
+			<fala personagem="personagem1">Oh São Pimentel! Porque não irás aqui?</fala>
+			<fala personagem="personagem4">E para onde é a viagem?</fala>
+			<fala personagem="personagem1">É para onde tu hás de ir.</fala>
+			<fala personagem="personagem4">E vamos já partir?</fala>
+			<fala personagem="personagem1">Não penses em mais linguagem.</fala>
+			<fala personagem="personagem4">Mas para onde é a passagem?</fala>
+			<fala personagem="personagem1">Para a infernal comarca.</fala>
+			<fala personagem="personagem4">Dix! Não vou eu em tal barca. Aquela outra tem
+				avantagem.
+			</fala>
+		</cenas>
+		<cenas contexto="Junto à barca do Anjo">
+			Dirige-se à barca do Anjo, e diz:
+			<fala personagem="personagem4">Oh da barca! Olá! Ó! Haveis já de partir?
+			</fala>
+			<fala personagem="personagem3">E onde queres tu ir?</fala>
+			<fala personagem="personagem4">Eu, para o Paraíso vou.</fala>
+			<fala personagem="personagem3">Pois quanto a mim, muito fora estou de te levar
+				para lá. Aquela outra barca te aceitará. Ali vai quem enganou!
+			</fala>
+			<fala personagem="personagem4">Porquê?</fala>
+			<fala personagem="personagem3">Porque esse bolsão ocuparia todo o navio.
+			</fala>
+			<fala personagem="personagem4">Juro a Deus que vai vazio!</fala>
+			<fala personagem="personagem3">Não no teu coração.</fala>
+			<fala personagem="personagem4">Lá me ficou de roldão a minha fazenda e alheia.
+			</fala>
+			<fala personagem="personagem3">Ó onzena, como és feia e filha da maldição!
+			</fala>
+		</cenas>
+	</partes>
+</guião>

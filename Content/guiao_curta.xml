@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="style.xsl"?>
+
+<guião xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="guiao.xsd">
+	<cabeçalho>
+		<título>O DEZ: O PRESENTE</título>
+		<autor>João Nunes</autor>
+		<data>2008-10-13</data>
+		<personagens>
+			<personagem identificador="personagem1">
+				<nome>Edgar</nome>
+				<descrição>Um homem do quotidiano que trabalha num posto de gasolina.</descrição>
+			</personagem>
+			<personagem identificador="personagem2">
+				<nome>O Chefe</nome>
+				<descrição>Nesta curta metragem a personagem "O Chefe" é exatamente isso, o
+					chefe de Edgar e dono do posto de gasolina.</descrição>
+			</personagem>
+		</personagens>
+	</cabeçalho>
+	<cenas contexto="Ext. Rua de subúrbios; Amanhecer">
+		Um homem caminha
+		numa rua escura, em que a primeira luz da manhã
+		aparece por trás da
+		linha
+		dos prédios.
+		<fala personagem="personagem1">Às vezes gostava de ser outra pessoa; de ter
+			uma vida mais simples. Não ter de ir para o trabalho à hora a que
+			os outros regressam a casa.
+		</fala>
+		O homem é Edgar, quarenta anos,
+		magro, triste. Caminha de cabeça baixa
+		e mãos nos bolsos.
+	</cenas>
+	<cenas contexto="Int. Autocarro; Dia">
+		<comentário>começa a chover</comentário>
+		De cabeça encostada
+		à janela, num autocarro suburbano quase vazio,
+		Edgar olha sem
+		expressão
+		as paisagens escuras que passam a correr.
+		<fala personagem="personagem2">
+			Não ter que levar todos os dias com quatro
+			horas de transportes
+			públicos.
+		</fala>
+	</cenas>
+	<cenas contexto="Int. Posto de gasolina; Dia">
+		<adereço>Roupa de trabalho</adereço>
+		<refere personagem="personagem1" />
+		Está de pé em frente do balcão de um posto de abastecimento. Está
+		fardado com a farda de empregado, e tem a cabeça baixa e as mãos
+		atrás das costas.
+		<fala personagem="personagem1">E, sobretudo, não ter de aturar a besta do
+			meu
+			chefe.
+		</fala>
+		Só agora ouvimos, de repente, o SOM AMBIENTE, no qual se destacam os
+		IMPROPÉRIOS do chefe, que ainda não vemos.
+		<fala personagem="personagem2">Mas será assim tão difícil de entender, ó Edgar?
+		</fala>
+		O CHEFE é um homem baixo, de ar duro, vestido com a versão mais
+		chique da mesma farda. Bate com o dedo num bloco de notas que tem na
+		mão, enquanto olha para Edgar.
+		<fala personagem="personagem2">Ou é você que é particularmente burro?</fala>
+		Edgar não responde nem levanta o olhar. O chefe continua a
+		massacrá-lo.
+		<fala personagem="personagem2">Quantas vezes vai ser preciso eu dizer-lhe que
+			as referências AZ-37- nove-nove-barra-42 só são processadas depois
+			das 85-três-três- barra-26? E que só depois de terminar essas duas
+			é que passa para as 16-cinco-cinco-barra-91 ?
+		</fala>
+	</cenas>
+</guião>

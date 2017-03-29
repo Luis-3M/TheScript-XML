@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Luis Moreira up201102786@fc.up.pt -->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<!-- GROUPS -->
+	<xs:group name="hierarquia">
+		<xs:choice>
+			<xs:element ref="temporadas" minOccurs="0" maxOccurs="unbounded" />
+			<xs:element ref="partes" minOccurs="0" maxOccurs="unbounded" />
+			<xs:element ref="episódios" minOccurs="0" maxOccurs="unbounded" />
+			<xs:element ref="cenas" minOccurs="0" maxOccurs="unbounded" />
+		</xs:choice>
+	</xs:group>
+
+	<xs:group name="preâmbulo">
+		<xs:sequence>
+			<xs:element name='título' type="NormString" />
+			<xs:element name='sinopse' type="NormString" minOccurs="0" />
+			<xs:element name="personagens" type="Personagens"
+				minOccurs="0" />
+		</xs:sequence>
+	</xs:group>
+
+	<!-- SIMPLE TYPES -->
+	<xs:simpleType name="NormString">
+		<xs:restriction base="xs:normalizedString"></xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="Date">
+		<xs:restriction base="xs:date"></xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="Id">
+		<xs:restriction base="xs:ID"></xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="IdRef">
+		<xs:restriction base="xs:IDREF"></xs:restriction>
+	</xs:simpleType>
+
+	<!-- COMPLEX TYPES -->
+	<xs:element name='guião'>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="cabeçalho" type="Cabeçalho"></xs:element>
+				<xs:group ref="hierarquia"></xs:group>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name="Cabeçalho">
+		<xs:sequence>
+			<xs:element name='título' type="NormString" />
+			<xs:element name='autor' type="NormString" maxOccurs="unbounded" />
+			<xs:element name='data' type="Date" />
+			<xs:element name='sinopse' type="NormString" minOccurs="0" />
+			<xs:element name='personagens' type="Personagens" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="Personagens">
+		<xs:sequence>
+			<xs:element name='personagem' type="Personagem" maxOccurs='unbounded' />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="Personagem">
+		<xs:sequence>
+			<xs:element name='nome' type="NormString" />
+			<xs:element name='descrição' type="NormString" />
+		</xs:sequence>
+		<xs:attribute name='identificador' type="Id" use='required' />
+	</xs:complexType>
+
+	<xs:element name='temporadas'>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:group ref="preâmbulo"></xs:group>
+				<xs:element ref='episódios' maxOccurs="unbounded" />
+			</xs:sequence>
+			<xs:attribute name='identificador' type="Id" use='required' />
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name='episódios'>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:group ref="preâmbulo"></xs:group>
+				<xs:element ref="cenas" maxOccurs="unbounded" />
+			</xs:sequence>
+			<xs:attribute name='identificador' type="Id" use='required' />
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name='partes'>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:group ref="preâmbulo"></xs:group>
+				<xs:element ref="cenas" maxOccurs="unbounded" />
+			</xs:sequence>
+			<xs:attribute name='identificador' type="Id" use='required' />
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name='cenas'>
+		<xs:complexType mixed='true'>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element name='fala' type="Fala" />
+				<xs:element name='adereço' type="NormString" />
+				<xs:element name='refere' type="Refere" />
+				<xs:element name='comentário' type="NormString" />
+			</xs:choice>
+			<xs:attribute name="contexto" type="NormString" use="required" />
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name="Fala" mixed='true'>
+		<xs:attribute name="personagem" type="IdRef" use="required" />
+	</xs:complexType>
+
+	<xs:complexType name="Refere">
+		<xs:attribute name="personagem" type="IdRef" use="required" />
+	</xs:complexType>
+</xs:schema>
